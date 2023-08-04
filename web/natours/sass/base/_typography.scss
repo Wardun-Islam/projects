@@ -1,0 +1,68 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-dark-grey;
+    padding: 3rem;
+    line-height: 1.7;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 3.5rem;
+    text-align: center;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 1s ease-in-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        font-weight: 700;
+        animation: moveInRight 1s ease-in-out;
+        position: relative;
+        left: -.6rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: .5rem;
+    background-image: linear-gradient(to right, $light-green, $dark-green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover {
+        transform: skew(15deg, 2deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

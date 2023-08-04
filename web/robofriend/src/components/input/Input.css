@@ -1,0 +1,33 @@
+.al{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+input{
+	background-color: #10375c;
+	color: #f2ed6f;
+}
+input:hover{
+	background-color: #442727;
+}
+input:focus{
+	outline: none;
+	background-color: #442727;
+}
+
+.button {
+	  border: none;
+	  color: white;
+	  padding: 10px 24px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin-bottom: 8px;
+	  cursor: pointer;
+	  background-color: #008CBA;
+}
+.button:active{
+	background-color: #0779e4;
+}

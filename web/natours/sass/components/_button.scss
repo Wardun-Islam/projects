@@ -1,0 +1,95 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.3rem 2rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 1.6rem;
+        border: none;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:focus,
+    &:active {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+    }
+
+    &--white {
+        background-color: white;
+        color: $color-dark-grey;
+
+        &::after {
+            background-color: white;
+        }
+    }
+
+    &--green {
+        background-color: $medium-green;
+        color: $color-white;
+
+        &::after {
+            background-color: $medium-green;
+        }
+    }
+
+    &::after {
+        content: " ";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        border-radius: 10rem;
+    }
+
+    &--animated {
+        animation: moveInTop .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        color: $medium-green;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid $medium-green;
+        padding: 3px;
+        font-size: $default-font-size;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $medium-green;
+        color: $color-white;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &:active {
+        background-color: $medium-green;
+        color: $color-white;
+        transform: translateY(0px);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+}

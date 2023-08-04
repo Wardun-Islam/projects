@@ -1,0 +1,137 @@
+body{
+	margin: 0;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+h1{
+	font-family: 'Sacramento', cursive;
+	font-size: 90px;
+	font-weight: bold;
+	margin: 0;
+	color: #66BFBF;
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	color: #66BFBF;
+	font-weight: normal;
+	font-size: 40px;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 2;
+	margin: 0;
+	color: #66BFBF;
+}
+.top-container{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	background-color: #EAF6F6;
+}
+.top-container-img{
+	width: 100%;
+}
+.top-container-text{
+	display: inline-block;
+	margin-top: 100px;
+}
+span{
+	text-decoration: underline;
+}
+.cloud-top{
+	position: absolute;
+	width: 200px;
+	height: auto;
+	top: 200px;
+	left: 150px;
+}
+.cloud-bottom{
+	position: absolute;
+	width: 200px;
+	height: auto;
+	top: 50px;
+	right: 150px;
+}
+.description-text{
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 40%;
+	line-height: 2;
+	padding: 70px;
+}
+.profile-img{
+	width: 200px;
+	height: auto;
+}
+hr{
+	border: 10px dotted #EAF6F6;
+	width: 5%;
+	border-bottom: none;
+	margin: 100px auto 100px auto;
+}
+.skill-desc{
+	text-align: left;
+}
+.skill1-img{
+	margin-right: 20px;
+	width: 220px;
+	height: auto;
+	float: left;
+}
+.skill2-img{
+	margin-left: 20px;
+	width: 220px;
+	height: auto;
+	float: right;
+}
+  .button {
+    backface-visibility: hidden;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  background: linear-gradient(180deg,#16d6d1 0%,#dc8 0%,#3be7e2 0%,#0b9d98 100%);
+  border-radius: 5px;
+  border: 1px solid #52abb1;
+  border-width: 1px 1px 1px 1px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+    color: #fff;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4)
+  }
+  .button > div {
+    color: #999;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  font-weight: initial;
+  font-style: normal;
+  text-align: center;
+  margin: 0px 0px 0px 0px
+  }
+  .button > i {
+    font-size: 1em;
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  position: static
+  }
+  .button > .ld {
+    font-size: initial
+  }
+  .footer{
+  	margin-top: 20px;
+  	background-color: #66BFBF;
+  	padding: 20px;
+  }
+  a{
+  	color: #11999E;
+  	margin-right: 10px;
+  }

@@ -1,0 +1,12 @@
+.mar{
+     margin: 10px;
+}
+
+.card{
+	height: 350px;
+	width: 300px;
+}
+
+h1{
+	overflow-wrap: break-word;
+}

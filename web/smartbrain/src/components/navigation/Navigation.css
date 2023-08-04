@@ -1,0 +1,17 @@
+.sign-out-container{
+	display: flex;
+	justify-content: flex-end;
+	text-decoration: underline;
+}
+.sign-out{
+	font-weight: bold;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+}
+.sign-out:hover{
+	cursor: pointer;
+}
+.sign-out:active{
+	color: #84a9ac;
+}

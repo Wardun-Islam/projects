@@ -1,0 +1,12 @@
+.App{
+	z-index: -1;
+}
+.particle{
+	background-color: red;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: -1;
+}

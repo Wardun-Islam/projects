@@ -1,0 +1,96 @@
+.form {
+    &__group {
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        width: 90%;
+        display: block;
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        font-family: inherit;
+        border-bottom: 3px solid transparent;
+        color: inherit;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $medium-green;
+        }
+
+        &:focus:not(:valid) {
+            border-bottom: 3px solid $color-orange-dark;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $color-light-grey-4;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700rem;
+        margin-top: .7rem;
+        margin-left: 2rem;
+        display: block;
+        opacity: 1;
+        transition: all .2s;
+        color: inherit;
+    }
+
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        transform: translateY(-4rem);
+        visibility: hidden;
+    }
+
+    &__radio-group {
+        width: 49%;
+        display: inline-block;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        display: inline-block;
+        font-size: $default-font-size;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4rem;
+    }
+
+    &__radio-btn {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 5px solid $medium-green;
+        position: absolute;
+        top: -.18rem;
+        left: 0;
+
+        &::after {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $medium-green;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .2s;
+        }
+    }
+
+    &__radio-input:checked+&__radio-label &__radio-btn::after {
+        opacity: 1;
+    }
+}
